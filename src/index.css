@@ -156,6 +156,19 @@ input[type="number"]::-webkit-outer-spin-button {
   padding: 10px 0;
 }
 
+.mt-5 {
+  margin-top: 5px;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.mt-15 {
+  margin-top: 15px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+
 .cp {
   cursor: pointer;
 }
@@ -178,6 +191,7 @@ input[type="number"]::-webkit-outer-spin-button {
 .frame {
   position: relative;
   border: 1px solid #fff2;
+  border-bottom: none;
 }
 /* Sol Üst Köşe */
 .frame::before {

@@ -4,7 +4,8 @@ import "./index.css";
 import { App } from "./home.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
-  // clip-path: polygon(8% 0%, 92% 0%, 100% 20%, 100% 80%, 92% 100%, 8% 100%, 0% 80%, 0% 20%);
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 
 createRoot(document.getElementById("root")).render(
