@@ -41,6 +41,10 @@ export function App() {
     { type: "error", message: "Unknown entity detected!" },
   ]);
 
+  const planetImage = planets.find(
+    (planet) => planet.name === userInfo.planet
+  )?.image || "";
+
   const filterProductsByCategory = (category) => {
     setSelectedCategory(category);
     const filteredProducts = data.products.filter(
@@ -303,7 +307,7 @@ export function App() {
                       <small className="desc">{planet.coordinates}</small>
                     </small>
                     <small>
-                      Resources:{" "} <hr />
+                      Resources: <hr />
                       <small className="desc">
                         {planet.resources.join(", ")}
                       </small>
@@ -327,6 +331,7 @@ export function App() {
       </GalacticModal>
 
       <i></i>
+      <img src={planetImage} alt="" className="planet" />
     </div>
   );
 }

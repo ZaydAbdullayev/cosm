@@ -381,3 +381,12 @@
     }
   }
 }
+
+.planet{
+  position: fixed;
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  z-index: -1;
+  filter: blur(10px) brightness(0.5);
+}
